@@ -78,7 +78,7 @@ function CodeSubmission() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/generate-flowchart-ag2",
+        "https://naduus-codewizard-backend-7eb8b17dcb10.herokuapp.com/generate-flowchart-ag2",
         {
           code: codeSnippet,
           language: language,

@@ -26,7 +26,7 @@ function Analyzer() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/detect-functions', {
+      const response = await axios.post('https://naduus-codewizard-backend-7eb8b17dcb10.herokuapp.com/detect-functions', {
         code: codeSnippet,
       });
 
