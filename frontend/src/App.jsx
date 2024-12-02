@@ -5,11 +5,11 @@ import { useDispatch, useSelector } from "react-redux";
 //Home
 import Home from "./components/Home/Home";
 
-// Vishwa
-import Header from "./components/Taskmanagement/Header";
-import Center from "./components/Taskmanagement/Center";
-import boardsSlice from "./redux/boardsSlice";
-import EmptyBoard from "./components/Taskmanagement/EmptyBoard";
+// // Vishwa
+// import Header from "./components/Taskmanagement/Header";
+// import Center from "./components/Taskmanagement/Center";
+// import boardsSlice from "./redux/boardsSlice";
+// import EmptyBoard from "./components/Taskmanagement/EmptyBoard";
 
 //nadun
 import Analyzer from "./components/FlowChartGen/Analyzer";
@@ -27,12 +27,12 @@ import Profile from "./components/Sathira/Profile";
 import AddProblem from "./components/Sathira/AddProblem";
 
 function App() {
-  const [boardModalOpen, setBoardModalOpen] = useState(false);
-  const dispatch = useDispatch();
-  const boards = useSelector((state) => state.boards);
-  const activeBoard = boards.find((board) => board.isActive);
-  if (!activeBoard && boards.length > 0)
-    dispatch(boardsSlice.actions.setBoardActive({ index: 0 }));
+  // const [boardModalOpen, setBoardModalOpen] = useState(false);
+  // const dispatch = useDispatch();
+  // const boards = useSelector((state) => state.boards);
+  // const activeBoard = boards.find((board) => board.isActive);
+  // if (!activeBoard && boards.length > 0)
+  //   dispatch(boardsSlice.actions.setBoardActive({ index: 0 }));
 
   return (
     <Router>
@@ -41,7 +41,7 @@ function App() {
           {/* Home */}
           <Route path="/" element={<Home />} />
 
-          {/* Vishwa */}
+          {/* Vishwa
           <Route
             path="/taskmanagement"
             element={
@@ -66,7 +66,7 @@ function App() {
                 </>
               </div>
             }
-          />
+          /> */}
 
           {/* Nadun */}
           <Route
