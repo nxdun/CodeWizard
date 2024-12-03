@@ -2,7 +2,7 @@
 # CodeWizard Microservice Project
 
 This project is a microservice-based architecture that includes a frontend application and an API gateway for handling communication between services. The microservice we're focusing on is the CodeBase Analyzer, which processes and analyzes codebases.
-
+try right tab url for the  preview
 ## Open Ports
 
 | Port  | Service                | Access                          |
@@ -15,7 +15,7 @@ This project is a microservice-based architecture that includes a frontend appli
 
 ```bash
 CodeWizard/
-├── frontend/            # React frontend application
+├── frontend/            # React frontend application 
 ├── services/            # Microservices (e.g., codebase-analyzer, service-2)
 ├── api-gateway/         # API Gateway configuration
 └── docker-compose.yml   # Docker Compose configuration file
